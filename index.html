@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>minimalist quotes</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/quotes.js"></script>
+		<style>
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>minimalist quotes</h1>
+			</header>
+			<div class="main">
+				<div class="quote-area">
+					<div class="quote-text">
+						<blockquote>
+							<p id="quote"></p>
+							<footer>
+								<span id="author"></span> - <span id="year"></span>
+							</footer>
+						</blockquote>
+					</div>
+					<div class="quote-buttons">
+						<div id="tweet">
+							<img src="img/twitter.svg" alt="Tweet">
+							<a href="https://twitter.com/intent/tweet?text=Hello%20world" target="_blank">Tweet Quote</a>
+						</div>
+						<div id="new-quote">
+							<img src="img/refresh.svg" alt="Refresh">
+							New Quote
+						</div> 
+					</div>
+				</div>
+			</div>
+			<footer id="info">website by <a href="https://jamespeilow.com/" target="_blank">james peilow</footer>
+	
+	<script>
+	window.twttr = (function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0],
+		t = window.twttr || {};
+		if (d.getElementById(id)) return t;
+		js = d.createElement(s);
+		js.id = id;
+		js.src = "https://platform.twitter.com/widgets.js";
+		fjs.parentNode.insertBefore(js, fjs);
+		
+		t._e = [];
+		t.ready = function(f) {
+			t._e.push(f);
+		};
+		
+		return t;
+	}(document, "script", "twitter-wjs"));
+	</script>
+			
+	
+	</body>
+</html>

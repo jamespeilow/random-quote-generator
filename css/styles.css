@@ -1,0 +1,135 @@
+body {
+	font-family: 'Helvetica-Neue', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover, #new-quote:hover {
+	text-decoration: underline;
+}
+h1 {
+	margin: 20px;
+	font-size: 16px;
+	color: #444444;
+}
+.main {
+	
+}
+.quote-area {
+	margin: 10%;
+}
+.quote-text {
+	
+}
+.quote-text, .quote-buttons {
+	text-align: center;
+	padding: 30px 30px 0;
+}
+blockquote {
+	display: inline-block;
+}
+blockquote p {
+	display: inline-block;
+	text-align: center;
+	margin: 20px auto;
+	font-size: 24px;
+	position: relative;
+	font-weight: lighter;
+	text-align: center;
+	padding: 5px;
+	
+}
+blockquote p:before {
+	content: '“';
+	position: absolute;
+	left: -0.4em;
+	top: -0.2em;
+	font-size: 6rem;
+	transition: all 0.4s ease;
+}
+blockquote p:after {
+	content: '”';
+	position: absolute;
+	margin-top: -10px;
+	right: -0.4em;
+	font-size: 6rem;
+	transition: all 0.4s ease;
+
+}
+blockquote>footer {
+	text-align: center;
+	font-size: 16px;
+	color: #266DC0;
+	font-style: italic;
+	margin-top: 20px;
+}
+blockquote>footer>#author {
+
+}
+.quote-buttons div {
+	margin: 0 30px;
+	display: inline-block;
+}
+.quote-buttons>div>img {
+	display: block;
+	margin: 10px auto;
+	width: 30px;
+	height: 30px;
+	opacity: 0.7;
+	transition: all 0.5s ease;
+}
+.quote-buttons>div>img:hover {
+	opacity: 1;	
+}
+#new-quote:hover img {
+	transform: rotate(-180deg);
+}
+#info {
+	font-size: 12px;
+	position: absolute;
+	top: 0;
+	right:0;
+	margin: 20px;
+
+}
+.quote-text {
+	display: none;
+}
+.quote-area {
+	transition: all 0.5s ease;
+}
+
+
+/* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+		blockquote p {
+			font-size: 20px;
+		}
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+	    blockquote p:before, blockquote p:after {
+			font-size: 46px;
+		}
+		.quote-buttons>div {
+			display: block;
+			margin:30px auto;
+		}
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+
+    }
