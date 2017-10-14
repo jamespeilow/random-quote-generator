@@ -8,13 +8,22 @@ a {
 a:hover, #new-quote:hover {
 	text-decoration: underline;
 }
-h1 {
-	margin: 20px;
+header h1 {
+	margin: 10px 0 0 10px;
 	font-size: 16px;
 	color: #444444;
+	float: left;
+	
+}
+header p {
+	float: right;
+	font-size: 12px;
+	margin: 12px 20px 0px 0px;
+	line-height: 16px;
+
 }
 .main {
-	
+	clear: both;
 }
 .quote-area {
 	margin: 10%;
@@ -24,10 +33,11 @@ h1 {
 }
 .quote-text, .quote-buttons {
 	text-align: center;
-	padding: 30px 30px 0;
+	padding: 10px 30px 0;
 }
 blockquote {
 	display: inline-block;
+	margin-top: 0;
 }
 blockquote p {
 	display: inline-block;
@@ -68,12 +78,12 @@ blockquote>footer>#author {
 
 }
 .quote-buttons div {
-	margin: 0 30px;
+	margin: 20px;
 	display: inline-block;
 }
 .quote-buttons>div>img {
 	display: block;
-	margin: 10px auto;
+	margin: 20px auto;
 	width: 30px;
 	height: 30px;
 	opacity: 0.7;
@@ -116,6 +126,13 @@ blockquote>footer>#author {
 		blockquote p {
 			font-size: 20px;
 		}
+		blockquote {
+			margin-top: 0;
+		}
+		.quote-area {
+			margin: 10px;
+			padding-top: 30px;
+		}
     }
 
     /* Extra Small Devices, Phones */ 
@@ -124,8 +141,11 @@ blockquote>footer>#author {
 			font-size: 46px;
 		}
 		.quote-buttons>div {
-			display: block;
-			margin:30px auto;
+			display: inline-block;
+			margin: 0 20px;
+		}
+		.quote-text {
+			padding: 10px;
 		}
     }
 
